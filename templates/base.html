@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project {% block title %}{% endblock title %}</title>
+	
+	<!-- Styles -->
+
+	<link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	{% block styles %}
+		
+	{% endblock styles %}
+
+	<!-- end Styles -->
+
+</head>
+<body>
+	<h1><a href="/">Project <img src="{% static 'img/project.png' %} " alt=""></a> </h1>
+	<ul>
+		<li><a href="{% url 'app1:app1View' %}">App 1</a></li>
+		<li><a href="">App 2</a></li>
+		<li><a href="">App 3</a></li>
+	</ul>
+	{% block content %}
+		
+	{% endblock content %}
+	
+	<!-- Scripts -->
+	<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+	<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+	{% block scripts %}
+		
+	{% endblock scripts %}
+
+	<!-- end Scripts -->
+
+</body>
+</html>

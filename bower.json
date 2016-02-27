@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Anderson Dorregaray Linares <dorregaray.anderson@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

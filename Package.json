@@ -1,0 +1,23 @@
+{
+  "name": "django-node-started",
+  "version": "0.1.5",
+  "description": "litle test",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "2.3.3",
+    "express": "4.13.3",
+    "bower": "1.7.2"
+  },
+  "scripts" :{
+    "postinstall" : "bower install"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

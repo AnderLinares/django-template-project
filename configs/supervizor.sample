@@ -1,0 +1,7 @@
+[program:gunicorn_project]
+command=/path/envProject/bin/gunicorn project.wsgi:application -c /path/project/gunicorn.conf.py --env DJANGO_SETTINGS_MODULE=project.settings.local
+directory=/path/project
+user=nobody
+autostart=true
+autorestart=true
+redirect_stderr=true
